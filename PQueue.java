@@ -67,4 +67,7 @@ abstract class PQueue<T> {
     void remove() {
         poll();
     }
+    int size(){
+        return length;
+    }
 }
