@@ -40,4 +40,7 @@ public class UnionFind {
     boolean isSame(int x, int y) {
         return getRoot(x) == getRoot(y);
     }    
+    int getLength(){
+        return length;
+    }
 }
