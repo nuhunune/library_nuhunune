@@ -11,5 +11,6 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	- `int getbit(int index)`  
 	  指定した位置のbitを返します。
 	- `void update(int index)`  
-	  bitをN進法の数字として見たとき、値を1増やします。外側からは`update(0)`のように呼び出してください。
-		
+	  bitをN進法の数字として見たとき、値を1増やします。外側からは`update(0)`のように呼び出してください。		
+
+- ### UnionFind.java
