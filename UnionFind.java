@@ -1,9 +1,9 @@
 
 public class UnionFind {
-    int[] parent;
-    int[] depth;
-    int rootX, rootY;
-    int length;
+    private int[] parent;
+    private int[] depth;
+    private int rootX, rootY;
+    private int length;
  
     UnionFind(int length) {
         this.length = length;
@@ -14,7 +14,7 @@ public class UnionFind {
         depth = new int[length];
     }
  
-    int getRoot(int x) {
+    private int getRoot(int x) {
         if (parent[x] == x) {
             return x;
         } else {
