@@ -1,5 +1,4 @@
 # library_nuhunune
-nuhununeの自作ライブラリ
 nuhununeが作ったライブラリです、適当に使ってください。
 
 ## __それぞれのファイルの説明__
