@@ -1,6 +1,6 @@
 class Mods {
-    int mod;
-    int[] fact;
+    private int mod;
+    private int[] fact;
     //modは十分大きい素数にすること!
     public Mods(int len,int mod){
         fact=new int[len+1];
@@ -14,9 +14,9 @@ class Mods {
         return (int)(((long)a+(long)b)%mod);
     }
     int modMult(int a,int b){
-        return (int)(((long)a*(long)b)%mod);
+        return (int)((((long)a*(long)b)%mod+mod)%mod);
     }
-    int pow2(int a,int times){
+    private int pow2(int a,int times){
         if(times==0)return a;
         else return pow2((int)((long)a*(long)a%mod),times-1);
     }
@@ -30,9 +30,12 @@ class Mods {
         }
         return output;
     }
+    int modDivide(int a,int b){
+        return modMult(a,modPow(b,mod-2));
+    }
     int modNCR(int n,int r){
         if(n<r)return 0;
         if(n==r)return 1;
-        return modMult(fact[n],modPow(r,mod-2));
+        return modDivide(modDivide(fact[n],fact[r]),fact[n-r]);
     }
 }
