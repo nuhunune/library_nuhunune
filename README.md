@@ -69,4 +69,4 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	 - `int modDivide(int a,int b)`  
 	   bの逆元を用いてa/bを返します。剰余を取らない本来の値において、a%b==0となるのが前提です。
 	 - `int modNCR(int n,int r)`  
-	   nCrをmodで割った余りを返します。
+	   nCr(二項係数)をmodで割った余りを返します。
