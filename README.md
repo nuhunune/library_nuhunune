@@ -5,7 +5,7 @@ nuhununeが作ったライブラリです、適当に使ってください。
 - ### __README.md__
 	 これです。
 	   
-- ### __Bitsearch.java__
+- ### __[BitSearch.java](BitSearch.java)__
 	bit全探索をします。
 	#### コンストラクタ、メソッドの説明
 	- コンストラクタ `BitSearch(int length,int bottom)`   
@@ -15,7 +15,7 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	- `void update(int index)`  
 	  bitをN進法の数字として見たとき、値を1増やします。外側からは`update(0)`のように呼び出してください。		
   
-- ### __UnionFind.java__
+- ### __[UnionFind.java](UnionFind.java)__
 	UnionFind木です。カプセル化しました。
 	#### コンストラクタ、メソッドの説明
 	- コンストラクタ `UnionFind(int length)`  
@@ -28,7 +28,7 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	  木にあるグループの数を返します。
 	  
 	    
-- ### __MyMath.java__
+- ### __[MyMath.java](MyMath.java)__
 	 作ったライブラリのうちメソッド単体のもので、算術関係と思われるお遊び系のものを集めます。これから内容は増えていくと思われます。
 	 #### コンストラクタ、メソッドの説明
 	 - `static String primeFactrization(int input)`  
@@ -37,7 +37,7 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	   入力: 94564759742  
 	   出力:"94564759742=2x17x19x59x1361x1823"
   
-- ### __PQueue.java__
+- ### __[PQueue.java](PQueue.java)__
 	 優先度付きQueueですが、オブジェクトをそのオブジェクトの整数型フィールドやメソッドの整数型戻り値をもとに並び替えることができます。本体はPQueueクラスで、MyQueueクラスは使用例です。MyQueueクラスのようにPQueueを継承して使ってください。Tは総称型です。
 	 #### コンストラクタ、メソッドの説明
 	 - コンストラクタ  
@@ -55,7 +55,7 @@ nuhununeが作ったライブラリです、適当に使ってください。
 	 - `int size()`  
 	   Queueの要素数を返します。
 	   
-- ### __Mods.java__
+- ### __[Mods.java](Mods.java)__
 	 剰余を取ることがよくある演算をするメソッドを集めました。
 	 #### コンストラクタ、メソッドの説明
 	 - コンストラクタ`Mods(int length,int mod)`  
