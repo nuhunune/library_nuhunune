@@ -7,7 +7,7 @@ class Mods {
         fact[0]=fact[1]=1;
         this.mod=mod;
         for(int i=2;i<=len;i++){
-            fact[i]=(int)((long)fact[i-1]*i)%mod;
+            fact[i]=modMult(fact[i-1],i);
         }
     }
     int modSum(int a,int b){
